@@ -33,8 +33,13 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = ["django.contrib.auth", "django.contrib.contenttypes", "django.contrib.staticfiles", "qr_code", "qr_code_demo", "user_site",
                   'django.contrib.sessions',
-                  'scan_qr',
+                  'scan_qr', 'corsheaders',
                   ]
+
+CORS_ALLOWED_ORIGINS = [
+    'https://pacilflix.cloud',  # Add your trusted origin here
+]
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

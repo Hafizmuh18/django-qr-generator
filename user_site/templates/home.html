@@ -54,14 +54,12 @@
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">QR Scanner Ramadan</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <div class="hero">
         <h1>Welcome, {{ user.name }}</h1>
         <p>Email: {{ user.email }}</p>
@@ -70,7 +68,6 @@
         {% qr_from_text user.email size="M" %}
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>Ramadan Kareem! | Made with ❤️</p>
     </footer>
